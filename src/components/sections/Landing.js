@@ -2,7 +2,6 @@ import React from 'react';
 import ImageText from './ImageText';
 import About from './About';
 import Services from './Services';
-import Partners from './Partners';
 import { Container } from 'react-bootstrap'
 
 const Landing = () => {
@@ -15,7 +14,6 @@ const Landing = () => {
             </div>
             <About />
             <Services />
-            {/* <Partners /> */}
         </Container>
     );
 }
