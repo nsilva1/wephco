@@ -19,3 +19,15 @@
 	height: 600;
 	position: relative;
 }
+
+.bg-about {
+	background-color: #f8f9fa;
+}
+
+.more-services {
+	float: right;
+}
+
+.service-img {
+	filter: brightness(50%);
+}

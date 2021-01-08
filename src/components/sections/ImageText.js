@@ -4,12 +4,12 @@ import { Card, Button, Container } from 'react-bootstrap'
 const ImageText = () => {
     return (
         <div className=''>
-            <Card>
+            {/* <Card>
                 <Card.Body>
                     <Container>
                     <Card.Title>
                         <h1 className="display-4">
-                            DESIGN THAT MAKES YOU FEEL AT HOME
+                            INTERIOR & EXTERIOR SERVICES
                         </h1>
                     </Card.Title>
                     <Card.Text>
@@ -18,7 +18,13 @@ const ImageText = () => {
                     <Button variant='success' >Contact Us</Button>
                     </Container>
                 </Card.Body>
-            </Card>
+            </Card> */}
+            <h1 className="display-4 text-center text-white">
+                INTERIOR & EXTERIOR SERVICES
+            </h1>
+            <div className="text-white text-center">
+               <strong> ...your home reflects your own personal style </strong>
+            </div>
         </div>
     );
 }

@@ -3,15 +3,15 @@ import {Container, Col, Row, Card} from 'react-bootstrap'
 
 const About = () => {
     return (
-        <div>
-            <Container>
+        <div className='bg-about' >
+            <Container fluid>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <Card border='light' className='mt-5' style={{width:'30rem'}} >
                             <Card.Body>
                                 <Container>
                                     <Card.Title>
-                                        <h3>WELCOME TO OUR COMPANY</h3>
+                                        <h3>WELCOME TO WEPH.CO</h3>
                                     </Card.Title>
                                     <Card.Text>
                                        <p className='lead' > Over the years, in this fast changing economy, Weph.co Enterprises has evolved and transcend beyond all odds in the Exterior & Interior Decoration industry. We believe in bringing your dreams into reality. </p>
@@ -23,7 +23,7 @@ const About = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                     {/* <>
                         <div className="about-image" />
                     </> */}
