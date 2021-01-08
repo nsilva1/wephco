@@ -7,7 +7,7 @@ const InteriorDesign = () => {
         <div className='mt-5'>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <h1 className="display-4 mb-2"> Interior Design </h1>
                         <p className="lead mt-2">
                             Our Interior Design services include:
@@ -30,7 +30,7 @@ const InteriorDesign = () => {
                             Get in touch with us for more details.
                         </p>
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <Contact message='I am interested in your Interior Design Services' />
                     </Col>
                 </Row>

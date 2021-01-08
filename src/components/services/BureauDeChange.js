@@ -7,10 +7,10 @@ const BureauDeChange = () => {
         <div className='mt-5'>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <h1 className="display-4 mb-2">Bureau de Change</h1>
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <Contact message='I am interesrted in your Bureau de Change services.' />
                     </Col>
                 </Row>

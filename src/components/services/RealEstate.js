@@ -7,7 +7,7 @@ const RealEstate = () => {
         <div className='mt-5'>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <h1 className="display-4 mb-2">Real Estate</h1>
                         <p className="lead">
                             Owning a home is a keystone of wealth... both financial affluence and emotional security
@@ -19,7 +19,7 @@ const RealEstate = () => {
                             Let us help you achieve that stability and security. Get in touch with us for more details
                         </p>
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <Contact message='I am interesrted in your Real Estate services.' />
                     </Col>
                 </Row>
