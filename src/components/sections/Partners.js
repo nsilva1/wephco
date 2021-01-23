@@ -4,7 +4,7 @@ import { Container, Carousel, Row, Col } from 'react-bootstrap';
 const Partners = () => {
 	return (
 		<div className='bg-about pt-5'>
-			<Container fluid>
+			<Container>
 				<div className='text-center display-4 mb-3'>Our Partners</div>
 				{/* Carousel */}
 				<Carousel>

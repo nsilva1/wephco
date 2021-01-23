@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 
 const Landing = () => {
 	return (
-		<Container fluid>
+		<div>
 			<div className='landing-image'>
 				<div className='image-text'>
 					<ImageText />
@@ -14,7 +14,7 @@ const Landing = () => {
 			</div>
 			<About />
 			<Services />
-		</Container>
+		</div>
 	);
 };
 

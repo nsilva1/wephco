@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Services = () => {
 	return (
 		<div className='pt-5 pb-5 bg-about'>
-			<Container fluid>
+			<Container>
 				<h1 className='display-5'>Our Services</h1>
 				<Row className=''>
 					<Col sm={12} md={4} className='text-white mt-5 mb-5'>
@@ -24,7 +24,7 @@ const Services = () => {
 						</Link>
 					</Col>
 					<Col sm={12} md={4} className='text-white mt-5 mb-5'>
-						<Link to='/services/exterior-design'>
+						<Link to='/services/exterior-design' style={{textDecoration:'none', color:'white'}}>
 							<Card bg='dark' className='text-center' style={{ width: '20rem' }}>
 								<Card.Img
 									className='service-img'
@@ -32,7 +32,7 @@ const Services = () => {
 									alt='Exterior Design'
 								/>
 								<Card.ImgOverlay>
-									<Card.Text>
+									<Card.Text style={{color:'white'}}>
 										<h4>Exterior & Architectural Design</h4>
 									</Card.Text>
 								</Card.ImgOverlay>
@@ -79,7 +79,7 @@ const Services = () => {
 								/>
 								<Card.ImgOverlay>
 									<Card.Text>
-										<h4>Bureau de Change</h4>
+										<h4>WephCoFX</h4>
 									</Card.Text>
 								</Card.ImgOverlay>
 							</Card>
