@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ImageText = () => {
-    return (
-        <div className=''>
-            {/* <Card>
+	return (
+		<div className=''>
+			{/* <Card>
                 <Card.Body>
                     <Container>
                     <Card.Title>
@@ -18,14 +18,12 @@ const ImageText = () => {
                     </Container>
                 </Card.Body>
             </Card> */}
-            <h1 className="display-4 text-center text-white">
-                INTERIOR & EXTERIOR SERVICES
-            </h1>
-            <div className="text-white text-center">
-               <strong> ...your home reflects your own personal style </strong>
-            </div>
-        </div>
-    );
-}
+			<h1 className='display-4 text-center text-white'>INTERIOR & EXTERIOR SERVICES</h1>
+			<div className='text-white text-center'>
+				<strong> ...your home reflects your own personal style </strong>
+			</div>
+		</div>
+	);
+};
 
-export default ImageText
+export default ImageText;
