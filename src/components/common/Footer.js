@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Footer = () => {
 	const [phone] = useState('447440685293');
 	const [message] = useState('Hello,%20I%20want%20to%20enquire%20about%20your%20services');
 	const url = `https://wa.me/${phone}/?text=${message}`;
 
-	const [email, setEmail] = useState('');
-	const BASE_URL = 'https://wephco-api.herokuapp.com';
+	// const [email, setEmail] = useState('');
+	// const BASE_URL = 'https://wephco-api.herokuapp.com';
 
 	// const onEmailChange = (event) => {
 	// 	setEmail(event.target.value);
