@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Contact from '../common/Contact';
+import {Link} from 'react-router-dom';
+
 
 const RealEstate = () => {
 	return (
@@ -14,6 +15,9 @@ const RealEstate = () => {
 		<div className='mt-5'>
 			<Container>
 				<Row>
+				<Col md={6}>
+						<img src={require('../images/estate.jpg').default} width='100%' alt='Real Estate'/>
+					</Col>
 					<Col sm={12} md={6}>
 						<h1 className='display-4 mb-2'>Real Estate</h1>
 						<p className='lead'>
@@ -29,10 +33,11 @@ const RealEstate = () => {
 							Let us help you achieve that stability and security. Get in touch with us for more
 							details
 						</p>
+						<Link to='/contact' className='btn header-btn'>
+							Contact Us
+						</Link>
 					</Col>
-					<Col sm={12} md={6}>
-						<Contact message='I am interesrted in your Real Estate services.' />
-					</Col>
+					
 				</Row>
 			</Container>
 		</div>

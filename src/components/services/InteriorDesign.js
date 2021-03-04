@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Contact from '../common/Contact';
+import {Link} from 'react-router-dom';
 
 const InteriorDesign = () => {
 	return (
@@ -8,14 +8,17 @@ const InteriorDesign = () => {
 			<div>
 					<img src={require('../images/interior-big.jpg').default} className='consultant-hero-image' alt="Interior Design"/>
 					<div className="consultant-hero-text">
-						<h1 className='display-2'>Interior Design</h1>
+						<h1 className='display-2'>Customised Interior Decor</h1>
 					</div>
 				</div>
 				<div className="mt-5">
 				<Container>
-				<Row>
-					<Col sm={12} md={6}>
-						<h1 className='display-4 mb-2'> Interior Design </h1>
+						<Row>
+							<Col>
+								<img src={require('../images/indoor-details.jpg').default} alt='Interior'/>
+							</Col>
+							<Col>
+							<h1 className='display-4 mb-2'> Interior Decor </h1>
 						<p className='lead mt-2'>Our Interior Design services include:</p>
 						<ul>
 							<li>Conceptual Designs</li>
@@ -24,11 +27,11 @@ const InteriorDesign = () => {
 							<li>Custom and Fine Furniture</li>
 						</ul>
 						<p className='lead mt-2'>Get in touch with us for more details.</p>
-					</Col>
-					<Col sm={12} md={6}>
-						<Contact message='I am interested in your Interior Design Services' />
-					</Col>
-				</Row>
+						<Link to='/contact' className='btn header-btn'>
+							Contact Us
+						</Link>
+						</Col>
+						</Row>
 			</Container>
 				</div>
 			
@@ -37,3 +40,6 @@ const InteriorDesign = () => {
 };
 
 export default InteriorDesign;
+
+
+<div class="">...</div>

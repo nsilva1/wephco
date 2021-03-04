@@ -13,10 +13,17 @@
 	transform: translate(-50%, -50%);
 }
 
-.about-image {
-	background-image: url('components/images/building.jpg');
+.about1 {
+	background-image: url('components/assets/img/gallery/section_bg02.jpg');
 	width: 100%;
-	height: 600;
+	height: auto;
+	position: relative;
+}
+
+.about2 {
+	background-image: url('components/assets/img/gallery/section_bg04.jpg');
+	width: 100%;
+	height: auto;
 	position: relative;
 }
 

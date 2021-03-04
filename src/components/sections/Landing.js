@@ -1,19 +1,24 @@
 import React from 'react';
 import ImageText from './ImageText';
-import About from './About';
-import Services from './Services';
-import { Container } from 'react-bootstrap';
+import Tenet from './Tenet';
+import Quote from './Quote';
+import Consultant from './Consultant';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
 	return (
 		<div>
-			<div className='landing-image'>
-				<div className='image-text'>
-					<ImageText />
-				</div>
+			<ImageText />
+			<div className='text-center' style={{backgroundColor:'red', height:'20px'}}>
+				<Link to='/foundation-home' style={{textDecoration:'none'}}>
+					Join our Foundation in its bid to help its surrounding community.
+				</Link>
 			</div>
-			<About />
-			<Services />
+			<Tenet />
+			<Quote />
+			<Consultant />
+			{/* Partners */}
+			{/* grey images for dark backgrounnd. */}
 		</div>
 	);
 };

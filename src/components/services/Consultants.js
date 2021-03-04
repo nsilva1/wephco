@@ -1,45 +1,28 @@
-import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Contact from '../common/Contact';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Consultants = () => {
 
-	const [service, setService] = useState('Interior')
-
-	const selectChange = () => (event) => {
-		setService(event.target.value)
-	}
-
 	return (
-		<div className=''>
-				<div>
-					<img src={require('../images/consultant-big.jpg').default} className='consultant-hero-image' alt="Consultants"/>
+		<div>
+			<div>
+					<img src={require('../images/contact.jpg').default} className='consultant-hero-image' alt="Contact Us"/>
 					<div className="consultant-hero-text">
-						<h1 className='display-2'>Consultant</h1>
+						<h1 className='display-2'>Contact Us</h1>
 					</div>
 				</div>
-			<div className="mt-5">
-				<Container>
-					<Row>
-						<Col>
-						<label htmlFor='service'>Pick a Service</label>
-				<select id='service' className='form-control' onChange={selectChange}>
-					<option value="Interior Design">Interior</option>
-					<option value="Exterior Design">Exterior</option>
-					<option value="Real Estate">Real Estate</option>
-					<option value="Event Planning">Event Planning</option>
-					<option value="WephCoFX">WephCoFX</option>
-				</select>
-						</Col>
-						<Col>
-						<Contact message='I am interesrted in your Consultant services.' />
-						</Col>
-					</Row>
-				</Container>
-				
-			</div>
+		<div className='mt-5'>
+			<Container>
+				<div className="d-flex justify-content-center">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXFA8kojGUDY2CP-FLcZcWTcV7vsRL-vnmjnFtqYfS7NBmkA/viewform?embedded=true" title='Contact' width="640" height="1022" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+			</Container>
+		</div>
 		</div>
 	);
 };
 
 export default Consultants;
+
+
+// Dropdown first to pick service type then google form pops up to fill in details.

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -26,17 +26,15 @@ const Footer = () => {
 		};
 
 		const response = await axios.post(`${BASE_URL}/mail/send-mail`, payload);
-		if (response.status === 200) {
 			alert('Thank you for reaching out to us. We will get back to you shortly.');
-		}
 	};
 
 	return (
 		<div className=' pt-5 '>
-			<Container fluid>
+			<Container>
 				<Row>
 					<Col sm={12} md={4}>
-						<h4 className='mb-3'>About Us</h4>
+						<h3 className='mb-3' style={{ color: 'black' }}>About Us</h3>
 						<p className='lead'>
 							Weph.co is dedicated to delivering effective, efficient, respectful public service.
 							with integrity and accountability using both proven and innovative methodology.
@@ -45,7 +43,7 @@ const Footer = () => {
 						</p>
 					</Col>
 					<Col sm={12} md={4}>
-						<h4 className='mb-3'>Features</h4>
+						<h3 className='mb-3' style={{ color: 'black' }}>Services</h3>
 						<ul style={{ listStyleType: 'none' }}>
 							<li className='mb-3'>
 								<Link
@@ -92,18 +90,10 @@ const Footer = () => {
 						</ul>
 					</Col>
 					<Col sm={12} md={4}>
-						<h4 className='mb-3'>Get In Touch</h4>
-						<Form inline>
-							<Form.Control
-								type='email'
-								placeholder='Email'
-								value={email}
-								onChange={onEmailChange}
-							/>
-							<Button onClick={submit} variant='outline-primary'>
-								Get A Free Quote
-							</Button>
-						</Form>
+						<h3 className='mb-3' style={{ color: 'black' }}>Get In Touch</h3>
+						
+						<Link to='/contact' className="btn btn-black f-right">Contact Us</Link>
+						
 						{/* Address */}
 						<div className='mt-3'>
 							<Row>

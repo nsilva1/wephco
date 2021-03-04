@@ -10,18 +10,40 @@ const Partners = () => {
 				<Carousel>
 					<Carousel.Item interval={1500}>
 						<Row>
-							<Col sm={12} md={6}>
+							<Col>
 								<img
 									src={require('../images/wh.jpeg').default}
 									alt='WellaHealth'
-									className='w-100'
+									// className='w-100'
+									height={200}
+									width='100%'
 								/>
 							</Col>
-							<Col sm={12} md={6}>
+							<Col>
 								<img
 									src={require('../images/kahala.jpeg').default}
-									alt='Kalaha'
-									className='w-100'
+									alt='Kahala'
+									// className='w-100'
+									height={200}
+									width='100%'
+								/>
+							</Col>
+							<Col>
+								<img
+									src={require('../images/kahala.jpeg').default}
+									alt='Gril'
+									// className='w-100'
+									height={200}
+									width='100%'
+								/>
+							</Col>
+							<Col>
+								<img
+									src={require('../images/kahala.jpeg').default}
+									alt='LDS'
+									// className='w-100'
+									height={200}
+									width='100%'
 								/>
 							</Col>
 						</Row>

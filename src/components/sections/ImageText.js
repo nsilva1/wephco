@@ -2,27 +2,23 @@ import React from 'react';
 
 const ImageText = () => {
 	return (
-		<div className=''>
-			{/* <Card>
-                <Card.Body>
-                    <Container>
-                    <Card.Title>
-                        <h1 className="display-4">
-                            INTERIOR & EXTERIOR SERVICES
-                        </h1>
-                    </Card.Title>
-                    <Card.Text>
-                        Every great design begins with an even better story. Let us tell your story.
-                    </Card.Text>
-                    <Button variant='success' >Contact Us</Button>
-                    </Container>
-                </Card.Body>
-            </Card> */}
-			<h1 className='display-4 text-center text-white'>INTERIOR & EXTERIOR SERVICES</h1>
-			<div className='text-white text-center'>
-				<strong> ...your home reflects your own personal style </strong>
-			</div>
-		</div>
+	<div className="slider-area">
+        <div className="slider-active dot-style">
+            {/* <!-- Single Slider --> */}
+            <div className="single-slider slider-height hero-overly d-flex align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6">
+                            <div className="hero__caption">
+                                <span data-animation="fadeInLeft" data-delay=".4s">Welcome to Weph.Co</span>
+                                <h1 data-animation="fadeInLeft" data-delay=".6s">Customised Interior & Exterior Decor.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	);
 };
 
