@@ -11,23 +11,23 @@ const Footer = () => {
 	const [email, setEmail] = useState('');
 	const BASE_URL = 'https://wephco-api.herokuapp.com';
 
-	const onEmailChange = (event) => {
-		setEmail(event.target.value);
-	};
+	// const onEmailChange = (event) => {
+	// 	setEmail(event.target.value);
+	// };
 
-	const submit = async () => {
-		if (email === '') {
-			alert('Email field is empty');
-			return;
-		}
-		const payload = {
-			email: email,
-			message: 'I would like to know more about your services',
-		};
+	// const submit = async () => {
+	// 	if (email === '') {
+	// 		alert('Email field is empty');
+	// 		return;
+	// 	}
+	// 	const payload = {
+	// 		email: email,
+	// 		message: 'I would like to know more about your services',
+	// 	};
 
-		const response = await axios.post(`${BASE_URL}/mail/send-mail`, payload);
-			alert('Thank you for reaching out to us. We will get back to you shortly.');
-	};
+	// 	const response = await axios.post(`${BASE_URL}/mail/send-mail`, payload);
+	// 		alert('Thank you for reaching out to us. We will get back to you shortly.');
+	// };
 
 	return (
 		<div className=' pt-5 '>
