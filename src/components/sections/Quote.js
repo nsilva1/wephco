@@ -15,7 +15,7 @@ const Quote = () => {
                                 <div class="testimonial-top-cap">
                                     <img src={require('../assets/img/gallery/testi-logo.png').default} alt="" />
                                     <p>
-                                    Over the years, in this fast changing economy, Weph.co Enterprises has evolved and transcend beyond all odds in the Exterior & Interior Decoration industry. We believe in bringing your dreams into reality.
+                                    Over the years, in this fast changing economy, Weph.co has evolved and transcend beyond all odds in the Exterior & Interior Decoration industry. We believe in bringing your dreams into reality.
                                     </p>
                                 </div>
                                 {/* <!-- founder --> */}

@@ -8,6 +8,13 @@ const Footer = () => {
 	const [message] = useState('Hello,%20I%20want%20to%20enquire%20about%20your%20services');
 	const url = `https://wa.me/${phone}/?text=${message}`;
 
+	var lat = 9.074465094149614
+	var lng = 7.47555219979353
+	
+	const openMap = () => {
+		window.open("https://maps.google.com?q="+lat+","+lng )
+	}
+
 	// const [email, setEmail] = useState('');
 	// const BASE_URL = 'https://wephco-api.herokuapp.com';
 
@@ -99,7 +106,7 @@ const Footer = () => {
 							<Row>
 								<Col sm={3}>
 									{' '}
-									<i className='bi bi-geo-alt' style={{fontSize:'2rem'}} ></i>{' '}
+									<i onClick={openMap} className='bi bi-geo-alt' style={{fontSize:'2rem'}} ></i>{' '}
 								</Col>
 								<Col sm={9}>
 									<p>No B10, Valley Mall Plaza, Wuse 2, Abuja</p>
@@ -159,7 +166,7 @@ const Footer = () => {
 				</Row>
 
 				<div className='mt-5 pb-5 text-center'>
-					Designed by <a href='https://www.tomanetech.com.ng'>Tomane Technology Limited</a>
+					Designed by <a href='https://www.tomanetech.com.ng' style={{color:'black'}} >Tomane Technology Limited</a>
 				</div>
 			</Container>
 		</div>

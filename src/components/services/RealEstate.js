@@ -41,6 +41,12 @@ const RealEstate = () => {
 				</Row>
 			</Container>
 		</div>
+		<div className="d-flex justify-content-center">
+		<div className="listings">
+			<h3 className="lead">Have a look at our property listings</h3>
+			<iframe title='Real Estate Listings Video' width="560" height="315" src="https://www.youtube.com/embed/qcUma8xsnyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
 		</div>
 	);
 };

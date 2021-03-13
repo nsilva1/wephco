@@ -12,8 +12,8 @@ const Navigation = () => {
                 <div className="menu-wrapper d-flex align-items-center justify-content-between">
                     {/* <!-- Logo --> */}
                     <div className="logo">
-                        <Link to='/' style={{textDecoration:'none', color:'black'}}>
-													<h1>WEPH.CO</h1>
+                        <Link to='/' style={{textDecoration:'none'}}>
+													<img height='100px' width='100px' src={require('../images/wephco-2.png').default} alt='Logo' />
 												</Link>
                     </div>
                     {/* <!-- Main-menu --> */}
@@ -45,11 +45,6 @@ const Navigation = () => {
 																		WephCoFX
 																	</Link>
                                 </li>
-                                <li>
-																<Link to='/contact' style={{textDecoration:'none', color:'white'}}>
-																		Consultancy
-																	</Link>
-																</li>
                             </ul>
                         </nav>
                     </div>          

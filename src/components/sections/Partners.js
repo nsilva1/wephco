@@ -3,7 +3,7 @@ import { Container, Carousel, Row, Col } from 'react-bootstrap';
 
 const Partners = () => {
 	return (
-		<div className='bg-about pt-5'>
+		<div className='bg-about pt-5 pb-5'>
 			<Container>
 				<div className='text-center display-4 mb-3'>Our Partners</div>
 				{/* Carousel */}
@@ -21,7 +21,7 @@ const Partners = () => {
 							</Col>
 							<Col>
 								<img
-									src={require('../images/kahala.jpeg').default}
+									src={require('../images/gril.jpeg').default}
 									alt='Kahala'
 									// className='w-100'
 									height={200}
@@ -30,7 +30,7 @@ const Partners = () => {
 							</Col>
 							<Col>
 								<img
-									src={require('../images/kahala.jpeg').default}
+									src={require('../images/lds.png').default}
 									alt='Gril'
 									// className='w-100'
 									height={200}
