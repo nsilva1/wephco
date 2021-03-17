@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
@@ -9,20 +9,21 @@ const InteriorDesign = () => {
 		'https://www.instagram.com/p/CJvjAgdsvIr/',
 		'https://www.instagram.com/p/CLps_j4l9cq/',
 		'https://www.instagram.com/p/CLU-8tsFkMz/',
-		'https://www.instagram.com/p/CLU-biplBZ6/'
+		'https://www.instagram.com/p/CLU-biplBZ6/',
+		'https://www.instagram.com/p/CK3qWcXFlHV/'
 	])
 	
 	const [instagramLink, setInstagramLink] = useState('https://www.instagram.com/p/CK3qWcXFlHV/');
 	
-	const loadInstagramPhoto = () => {
+	const loadInstagramPhoto = useCallback(() => {
 		setTimeout(() => {
 			setInstagramLink(links[Math.floor(Math.random() * links.length)]);
-		},2500)
-	}
+		},5000)
+	},[instagramLink])
 	
 	useEffect(() => {
 		loadInstagramPhoto();
-	},[instagramLink, loadInstagramPhoto])
+	},[loadInstagramPhoto])
 
 	return (
 		<div>
