@@ -19,7 +19,7 @@ const InteriorDesign = () => {
 		setTimeout(() => {
 			setInstagramLink(links[Math.floor(Math.random() * links.length)]);
 		},5000)
-	},[instagramLink])
+	},[instagramLink, links])
 	
 	useEffect(() => {
 		loadInstagramPhoto();
