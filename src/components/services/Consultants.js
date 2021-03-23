@@ -14,7 +14,7 @@ const Consultants = () => {
 		<div className='mt-5'>
 			<Container>
 				<div className="d-flex justify-content-center">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXFA8kojGUDY2CP-FLcZcWTcV7vsRL-vnmjnFtqYfS7NBmkA/viewform?embedded=true" title='Contact' width="640" height="1022" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiSpGAVMAnBTLuhnCos1FnlaZLyiHfBxhfRAtn4tDaMJh2lg/viewform?embedded=true" width="700" title='Contact' height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				</div>
 			</Container>
 		</div>
