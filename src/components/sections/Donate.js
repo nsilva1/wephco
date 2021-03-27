@@ -95,7 +95,7 @@ const Donate = () => {
 				</div>
       <div className="mt-3">
         <Media>
-        <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='100' width='100'/>
+        <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
           <Media.Body>
           <p className="lead">
             Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge.         humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
@@ -117,10 +117,10 @@ Our activities are effective long-term investments that will help provide qualit
 Education is important because it is the glue that holds our society together. It is the step-up necessary to see above what is around you. Education provides guidance towards success as well as weapons against poverty. Education empowers women are able to break from oppressive gender roles and contribute more significantly to society. Education can mean the difference between a healthy long life or an unfortunately short one.
             </p>
           </Media.Body>
-          <img src={require('../images/foundation_1.png').default} alt="Education" height='200' width='100'/>
+          <img src={require('../images/foundation_1.png').default} alt="Education" height='300' width='300'/>
         </Media>
         <Media>
-        <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='200' width='300'/>
+        <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='400'/>
           <Media.Body>
           <p className="lead">
             Health care in Sub-Saharan Africa remains the worst in the world, with few countries able to spend the $34 to $40 a year per person that the World Health Organization considers the minimum for basic health care. And despite widespread poverty, an astonishing 50 percent of the region’s health expenditure is financed by out-of-pocket payments from individuals.
