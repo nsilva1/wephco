@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Card, Container, Button, Modal, Form } from 'react-bootstrap';
+import { Row, Col, Card, Container, Button, Modal, Form, Media } from 'react-bootstrap';
 import { useFlutterwave } from 'react-flutterwave'
 
 const FormModal = ({open, close}) => {
@@ -94,19 +94,17 @@ const Donate = () => {
 					</div>
 				</div>
       <div className="mt-3">
-        <div className="flex flex-nowrap">
-          <div className="order-1">
-            <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='400' width='500'/>
-          </div>
-          <div className="order-2">
-            <p className="lead">
+        <Media>
+        <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='100' width='100'/>
+          <Media.Body>
+          <p className="lead">
             Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge.         humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
             </p>
-          </div>
-        </div>
-        <div className="flex flex-nowrap">
-          <div className="order-1">
-            <p className="lead">
+          </Media.Body>
+        </Media>
+        <Media>
+          <Media.Body>
+          <p className="lead">
             Getting an education is not just a fundamental human right. It is pivotal to increasing employment and income opportunities. It is fundamental to breaking the cycle of poverty. Education is the key to unlocking the golden door of freedom for all in Africa.  It is the bedrock of social and economic development.  
 We are working on opening doors to equal educational opportunities for children who live in poverty and also to give girls an equal opportunity at getting an education.
 Our activities are effective long-term investments that will help provide quality educational opportunities for bright young minds and young adults. This enables them to rise above poverty and become better decision makers.
@@ -118,17 +116,13 @@ Our activities are effective long-term investments that will help provide qualit
             The funds help cover tuition, books, school supplies, uniforms, and other school-related costs.  By providing a scholarship to an African student, we offer a promise to the student that what they do in school has meaning, and they will have the reinforcement they need. Scholarships allow for future educational planning, and continuous support.
 Education is important because it is the glue that holds our society together. It is the step-up necessary to see above what is around you. Education provides guidance towards success as well as weapons against poverty. Education empowers women are able to break from oppressive gender roles and contribute more significantly to society. Education can mean the difference between a healthy long life or an unfortunately short one.
             </p>
-          </div>
-          <div className="order-2">
-            <img src={require('../images/foundation_1.png').default} alt="Education" height='400' width='300'/>
-          </div>
-        </div>
-        <div className="flex flex-nowrap">
-          <div className="order-1">
-            <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='500'/>
-          </div>
-          <div className="order-2">
-            <p className="lead">
+          </Media.Body>
+          <img src={require('../images/foundation_1.png').default} alt="Education" height='200' width='100'/>
+        </Media>
+        <Media>
+        <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='200' width='300'/>
+          <Media.Body>
+          <p className="lead">
             Health care in Sub-Saharan Africa remains the worst in the world, with few countries able to spend the $34 to $40 a year per person that the World Health Organization considers the minimum for basic health care. And despite widespread poverty, an astonishing 50 percent of the region’s health expenditure is financed by out-of-pocket payments from individuals.
             </p>
             <p className="lead">
@@ -141,8 +135,8 @@ Education is important because it is the glue that holds our society together. I
             Rather than serving only the rich, in Africa today the private sector is sometimes the only option for health care in many rural areas and poor urban slums. A poor woman in the region is as likely to take her sick child to a private hospital or clinic as to a public facility. 
 Our goal is to render basic health support assistance tru private healthcare services with standard healthcare services to the less vulnerable and privileged.
             </p>
-          </div>
-        </div>
+          </Media.Body>
+        </Media>
         {/* Next Section */}
         <div>
           <Container>
