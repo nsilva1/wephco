@@ -11,7 +11,7 @@ const FormModal = ({open, close}) => {
   });
 
   const config = {
-    public_key: 'FLWPUBK-a9717fea979c0995ca8a6a7ed2c493ef-X',
+    public_key: 'FLWPUBK-48ab47a3a7a2ed6c0fed1150ae23b62f-X',
     tx_ref: Date.now(),
     amount: state.amount,
     currency: 'NGN',
