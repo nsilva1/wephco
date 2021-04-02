@@ -99,7 +99,7 @@ const Donate = () => {
         <Media className='mb-5'>
         <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
           <Media.Body className='ml-3'>
-            <h3 className="lead">
+            <h3 className="">
               <b>Humanitarian Aid</b>
             </h3>
           <p className="lead">
@@ -110,7 +110,7 @@ const Donate = () => {
         <Media clasName='mb-5'>
           <Media.Body className='mr-3'>
           <p className="lead">
-            <h3 className="lead">
+            <h3 className="">
               <b>Education</b>
             </h3>
             Getting an education is not just a fundamental human right. It is pivotal to increasing employment and income opportunities. It is fundamental to breaking the cycle of poverty. Education is the key to unlocking the golden door of freedom for all in Africa.  It is the bedrock of social and economic development.  
@@ -130,10 +130,11 @@ Education is important because it is the glue that holds our society together. I
         <Media className='mb-5'>
         <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='400'/>
           <Media.Body className='ml-3'>
-          <p className="lead">
-            <h3 className="lead">
+          <h3 className="">
               <b>Healthcare</b>
             </h3>
+          <p className="lead">
+            
             Health care in Sub-Saharan Africa remains the worst in the world, with few countries able to spend the $34 to $40 a year per person that the World Health Organization considers the minimum for basic health care. And despite widespread poverty, an astonishing 50 percent of the region’s health expenditure is financed by out-of-pocket payments from individuals.
             </p>
             <p className="lead">
