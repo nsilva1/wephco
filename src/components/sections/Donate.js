@@ -91,23 +91,38 @@ const Donate = () => {
 					<img src={require('../images/charity.jpeg').default} className='consultant-hero-image' alt="WephCo Foundation"/>
 					<div className="consultant-hero-text">
 						<h1 className='display-2'>WephCo Foundation</h1>
+            <button className='btn btn-danger f-left' onClick={() => {
+              handleFlutterwavePayment({
+                callback: (response) => {
+                  console.log(response);
+                },
+                onClose: () => {},
+              })
+            }} > Donate Now </button>
 					</div>
 				</div>
       <div className="mt-3">
-        <Media>
+        <Container>
+        <Media className='mb-2'>
         <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
           <Media.Body>
+            <h5 className="lead">
+              <b>Humanitarian Aid</b>
+            </h5>
           <p className="lead">
-            Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge.         humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
+            Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge. Humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
             </p>
           </Media.Body>
         </Media>
-        <Media>
+        <Media clasName='mb-2'>
           <Media.Body>
           <p className="lead">
+            <h5 className="lead">
+              <b>Education</b>
+            </h5>
             Getting an education is not just a fundamental human right. It is pivotal to increasing employment and income opportunities. It is fundamental to breaking the cycle of poverty. Education is the key to unlocking the golden door of freedom for all in Africa.  It is the bedrock of social and economic development.  
 We are working on opening doors to equal educational opportunities for children who live in poverty and also to give girls an equal opportunity at getting an education.
-Our activities are effective long-term investments that will help provide quality educational opportunities for bright young minds and young adults. This enables them to rise above poverty and become better decision makers.
+{/* Our activities are effective long-term investments that will help provide quality educational opportunities for bright young minds and young adults. This enables them to rise above poverty and become better decision makers. */}
             </p>
             {/* <p className="lead">
             By providing these educational opportunities we decrease the number of potential young people falling through the cracks of the system. They will be less likely to walk through destructive paths that harm communities and perpetuate poverty.
@@ -119,14 +134,17 @@ Education is important because it is the glue that holds our society together. I
           </Media.Body>
           <img src={require('../images/foundation_1.png').default} alt="Education" height='300' width='300'/>
         </Media>
-        <Media>
+        <Media className='mb-2'>
         <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='400'/>
           <Media.Body>
           <p className="lead">
+            <h5 className="lead">
+              <b>Healthcare</b>
+            </h5>
             Health care in Sub-Saharan Africa remains the worst in the world, with few countries able to spend the $34 to $40 a year per person that the World Health Organization considers the minimum for basic health care. And despite widespread poverty, an astonishing 50 percent of the region’s health expenditure is financed by out-of-pocket payments from individuals.
             </p>
             <p className="lead">
-            The absence of an industrial revolution on the African subcontinent has left it with socio-economic structures that are, in the main, degenerative rather than accumulative’. Inequality in Africa health care system has risen significantly in the last 30 years. The number of  African countries living below the poverty line has increased e.g Nigeria from 19 million in 1970 to 90 million in 2000. In 1970, the top 2% of the population earned the same as the bottom 17%. By 2000 the income of the top 2% was equal to the bottom 55%.
+            {/* The absence of an industrial revolution on the African subcontinent has left it with socio-economic structures that are, in the main, degenerative rather than accumulative’. Inequality in Africa health care system has risen significantly in the last 30 years. The number of  African countries living below the poverty line has increased e.g Nigeria from 19 million in 1970 to 90 million in 2000. In 1970, the top 2% of the population earned the same as the bottom 17%. By 2000 the income of the top 2% was equal to the bottom 55%. */}
             </p>
             {/* <p className="lead">
             Technology is transforming how health care is delivered in Africa, giving more people in remote areas there and around the world access to better care. Likewise, easier access to data helps both doctors and policymakers make better-informed decisions about how to continue to improve the system. Even with these strides, however, the continent’s health care system faces big challenges. Our report finds that the private sector already delivers about half of Africa's health products and services. It calls for a close partnership between the public and private sectors, including improvements to regulatory oversight of private health care, and outlines ways that the private sector could be better engaged to improve its sustainability.
@@ -137,6 +155,7 @@ Our goal is to render basic health support assistance tru private healthcare ser
             </p> */}
           </Media.Body>
         </Media>
+        </Container>
         {/* Next Section */}
         <div>
           <Container>
@@ -182,19 +201,27 @@ Our goal is to render basic health support assistance tru private healthcare ser
             <Container>
               <Row>
                 <Col>
-                  <p className="lead text-danger">$18 Million</p>
+                  <p className="lead text-danger">
+                    <b>$18 Million</b>
+                  </p>
                   <p className="lead text-danger">Awarded in Grants</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">10 Projects</p>
+                <p className="lead text-danger">
+                  <b>10 Projects</b>
+                </p>
                 <p className="lead text-danger">Implemented</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">Across the African Continent</p>
+                <p className="lead text-danger">
+                  <b>Across the African Continent</b>
+                </p>
                 <p className="lead text-danger">Including 6 Countries</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">Over 130</p>
+                <p className="lead text-danger">
+                  <b>Over 130</b>
+                </p>
                 <p className="lead text-danger">Communities reached</p>
                 </Col>
               </Row>
