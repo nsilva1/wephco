@@ -97,13 +97,13 @@ const Donate = () => {
       <div className="mt-5">
         <Container>
         <Media className='mb-5'>
-        <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
+        <img src={require('../images/foundation-2.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
           <Media.Body className='ml-3'>
             <h3 className="">
               <b>Humanitarian Aid</b>
             </h3>
           <p className="lead">
-            Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge. Humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
+            Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge. Humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. 
             </p>
           </Media.Body>
         </Media>
