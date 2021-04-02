@@ -91,28 +91,28 @@ const Donate = () => {
 					<img src={require('../images/charity.jpeg').default} className='consultant-hero-image' alt="WephCo Foundation"/>
 					<div className="consultant-hero-text">
 						<h1 className='display-2'>WephCo Foundation</h1>
-            <button className='btn btn-danger f-left' onClick={openModal} > Donate Now </button>
+            <button className='btn header-btn text-center' onClick={openModal} > Donate Now </button>
 					</div>
 				</div>
-      <div className="mt-3">
+      <div className="mt-5">
         <Container>
-        <Media className='mb-2'>
+        <Media className='mb-5'>
         <img src={require('../images/humanitarian.jpeg').default} alt="Humanitarian Aid" height='300' width='300'/>
-          <Media.Body>
-            <h5 className="lead">
+          <Media.Body className='ml-3'>
+            <h3 className="lead">
               <b>Humanitarian Aid</b>
-            </h5>
+            </h3>
           <p className="lead">
             Humanitarian needs in Africa continue to be on the rise because of the combined effect of conflict, food shortages, climate change, poverty, and disease outbreaks – all factors to which the coronavirus pandemic constitutes an additional challenge. Humanitarian aid in Africa focuses on providing people in need with shelter, food and nutrition assistance, access to clean water and healthcare, education for children caught in humanitarian crises, and protection for the vulnerable, such as through the provision of psychosocial support services to victims of gender-based violence. Efforts are made to use different aid instruments that promote the link between short-term humanitarian aid, which can only address the consequences of a crisis, and building synergies with development and peace actions that tackle the root causes of crises.
             </p>
           </Media.Body>
         </Media>
-        <Media clasName='mb-2'>
-          <Media.Body>
+        <Media clasName='mb-5'>
+          <Media.Body className='mr-3'>
           <p className="lead">
-            <h5 className="lead">
+            <h3 className="lead">
               <b>Education</b>
-            </h5>
+            </h3>
             Getting an education is not just a fundamental human right. It is pivotal to increasing employment and income opportunities. It is fundamental to breaking the cycle of poverty. Education is the key to unlocking the golden door of freedom for all in Africa.  It is the bedrock of social and economic development.  
 We are working on opening doors to equal educational opportunities for children who live in poverty and also to give girls an equal opportunity at getting an education.
 {/* Our activities are effective long-term investments that will help provide quality educational opportunities for bright young minds and young adults. This enables them to rise above poverty and become better decision makers. */}
@@ -127,13 +127,13 @@ Education is important because it is the glue that holds our society together. I
           </Media.Body>
           <img src={require('../images/foundation_1.png').default} alt="Education" height='300' width='300'/>
         </Media>
-        <Media className='mb-2'>
+        <Media className='mb-5'>
         <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='400'/>
-          <Media.Body>
+          <Media.Body className='ml-3'>
           <p className="lead">
-            <h5 className="lead">
+            <h3 className="lead">
               <b>Healthcare</b>
-            </h5>
+            </h3>
             Health care in Sub-Saharan Africa remains the worst in the world, with few countries able to spend the $34 to $40 a year per person that the World Health Organization considers the minimum for basic health care. And despite widespread poverty, an astonishing 50 percent of the region’s health expenditure is financed by out-of-pocket payments from individuals.
             </p>
             <p className="lead">
