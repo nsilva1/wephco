@@ -195,25 +195,25 @@ Our goal is to render basic health support assistance tru private healthcare ser
             <Container>
               <Row>
                 <Col>
-                  <p className="lead text-danger">
+                  <p className=" text-danger">
                     <b>$18 Million</b>
                   </p>
                   <p className="lead text-danger">Awarded in Grants</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">
+                <p className=" text-danger">
                   <b>10 Projects</b>
                 </p>
                 <p className="lead text-danger">Implemented</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">
+                <p className=" text-danger">
                   <b>Across the African Continent</b>
                 </p>
                 <p className="lead text-danger">Including 6 Countries</p>
                 </Col>
                 <Col>
-                <p className="lead text-danger">
+                <p className=" text-danger">
                   <b>Over 130</b>
                 </p>
                 <p className="lead text-danger">Communities reached</p>
