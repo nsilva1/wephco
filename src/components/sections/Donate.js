@@ -91,14 +91,7 @@ const Donate = () => {
 					<img src={require('../images/charity.jpeg').default} className='consultant-hero-image' alt="WephCo Foundation"/>
 					<div className="consultant-hero-text">
 						<h1 className='display-2'>WephCo Foundation</h1>
-            <button className='btn btn-danger f-left' onClick={() => {
-              handleFlutterwavePayment({
-                callback: (response) => {
-                  console.log(response);
-                },
-                onClose: () => {},
-              })
-            }} > Donate Now </button>
+            <button className='btn btn-danger f-left' onClick={openModal} > Donate Now </button>
 					</div>
 				</div>
       <div className="mt-3">
