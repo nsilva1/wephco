@@ -128,7 +128,7 @@ Education is important because it is the glue that holds our society together. I
           <img src={require('../images/foundation_1.png').default} alt="Education" height='300' width='300'/>
         </Media>
         <Media className='mb-5'>
-        <img src={require('../images/healthcare.jpeg').default} alt="Healthcare" height='400' width='400'/>
+        <img src={require('../images/foundation-3.jpeg').default} alt="Healthcare" height='400' width='400'/>
           <Media.Body className='ml-3'>
           <h3 className="">
               <b>Healthcare</b>
