@@ -27,7 +27,7 @@ const Contact = () => {
     <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
     <button type='button' className='btn btn-white' >SEND MESSAGE</button>
 
