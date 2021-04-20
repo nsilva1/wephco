@@ -35,6 +35,11 @@ const Navigation = () => {
 																		Event Planning
 																	</Link>
 																</li>
+                                                                <li>
+																<Link to='/hotel-booking' style={{textDecoration:'none', color:'white'}}>
+																		Hotel Bookings
+																	</Link>
+																</li>
                                 <li>
 																<Link to='/services/real-estate' style={{textDecoration:'none', color:'white'}}>
 																		Real Estate

@@ -47,6 +47,13 @@ const Tenet = () => {
                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <div className="single-info mb-60">
                         <div className="info-caption">
+                            <h4>Hotel Bookings</h4>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div className="single-info mb-60">
+                        <div className="info-caption">
                             <h4>WephcoFX</h4>
                         </div>
                     </div>

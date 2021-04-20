@@ -25,6 +25,7 @@ import "./components/assets/css/slick.css"
 import "./components/assets/css/nice-select.css"
 import "./components/assets/css/style.css"
 import './App.css';
+import Hotel from './pages/Hotel/Hotel';
 
 function App() {
 	return (
@@ -40,6 +41,7 @@ function App() {
 				<Route exact path='/services/consultants' component={Consultants} />
 				<Route exact path='/contact' component={Consultants} />
 				<Route exact path='/foundation-home' component={Donate} />
+				<Route exact path='/hotel-booking' component={Hotel} />
 			</Switch>
 			<Footer />
 		</BrowserRouter>
