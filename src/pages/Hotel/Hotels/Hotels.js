@@ -10,13 +10,13 @@ const Hotels = () => {
     <section className="hotels">
       <div className="container">
         <h5 className="section-head">
-          <span className="heading">Explore</span>
+          <span className="heading" style={{color:'black'}}>Explore</span>
           <span className="sub-heading">Our beautiful Hotels</span>
         </h5>
         <div className="grid">
           <div className="grid-item featured-hotels">
             <img src={require('../../../assets/images/hotel_astro_resort.jpg').default} alt="" className="hotel-image"/>
-            <h5 className="hotel-name">Astro Hotel</h5>
+            <h5 className="hotel-name">Transcorp Hilton Hotel</h5>
             <span className="hotel-price">From $200/Night</span>
             <div className="hotel-rating">
               <i className="fas fa-star rating"></i>
@@ -29,7 +29,7 @@ const Hotels = () => {
           </div>
           <div className="grid-item featured-hotels">
             <img src={require('../../../assets/images/hotel_the_enchanted_garden.jpg').default} alt="" className="hotel-image"/>
-            <h5 className="hotel-name">Enchanted Garden</h5>
+            <h5 className="hotel-name">Peniel Apartments</h5>
             <span className="hotel-price">From $300/Night</span>
             <div className="hotel-rating">
               <i className="fas fa-star rating"></i>
@@ -42,7 +42,7 @@ const Hotels = () => {
           </div>
           <div className="grid-item featured-hotels">
             <img src={require('../../../assets/images/hotel_the_paradise.jpg').default} alt="" className="hotel-image"/>
-            <h5 className="hotel-name">The Paradise</h5>
+            <h5 className="hotel-name">The Grand Ibro Hotel</h5>
             <span className="hotel-price">From $350/Night</span>
             <div className="hotel-rating">
               <i className="fas fa-star rating"></i>

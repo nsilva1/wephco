@@ -8,7 +8,7 @@ const Contact = () => {
     <section className="contact">
       <div className="container">
         <h5 className="section-head">
-          <span className="heading">Contact</span>
+          <span className="heading" style={{color:'black'}}>Contact</span>
           <span className="sub-heading">Get in touch with us</span>
         </h5>
         <div className="contact-content">
@@ -18,23 +18,23 @@ const Contact = () => {
           <form action="" className="form contact-form">
             <div className="input-group-wrap">
               <div className="input-group">
-                <input type="text" className="input" placeholder="Name" required/>
+                <input type="text"  placeholder="Name" required/>
                 <span className="bar"></span>
               </div>
               <div className="input-group">
-                <input type="email" className="input" placeholder="E-mail" required/>
+                <input type="email"  placeholder="E-mail" required/>
                 <span className="bar"></span>
               </div>
             </div>
             <div className="input-group">
-              <input type="text" className="input" placeholder="Subject" required/>
+              <input type="text"  placeholder="Message" required/>
               <span className="bar"></span>
             </div>
-            <div className="input-group">
+            {/* <div className="input-group">
               <textarea className="input" cols="30" rows="8" placeholder="E-mail" required></textarea>
               <span className="bar"></span> 
-            </div>
-            <button type="submit" className="btn form-btn btn-purple">
+            </div> */}
+            <button type="submit" className="btn btn-purple">
               Send Message
             </button>
           </form>

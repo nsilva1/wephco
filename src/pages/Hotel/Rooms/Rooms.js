@@ -18,167 +18,167 @@ const Rooms = () => {
     <section className="rooms">
       <div className="container">
         <h5 className="section-head">
-          <span className="heading">Luxurious</span>
+          <span className="heading" style={{color:'black'}}>Luxurious</span>
           <span className="sub-heading">Affordable rooms</span>
         </h5>
         <div className="grid rooms-grid">
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room01 } alt="image01" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Valencia hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$200 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room02 } alt="image02" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Cubana hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$450 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room03 } alt="image03" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Bolingo hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$250 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room04 } alt="image04" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Tomane hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$600 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room05 } alt="image05" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">St. Vincents hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$300 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room06 } alt="image06" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Barcelona hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$400 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room07 } alt="image07" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Moscow hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$400 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room08 } alt="image08" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Sunnyville hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$400 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room09 } alt="image09" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Marriot hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$400 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>
           <div className="grid-item featured-rooms">
             <div className="image-wrap">
               <img className="room-image" src={ Room10 } alt="image10" />
-              <h5 className="room-name">Astro hotel</h5>
+              <h5 className="room-name">Sheraton hotel</h5>
             </div>
             <div className="room-info-wrap">
               <span className="room-price">$400 
                 <span className="per-night">Per night</span>
               </span>
-              <p className="paragraph">
+              {/* <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
               <button className="btn rooms-btn">Book now &rarr;</button>
             </div>
           </div>

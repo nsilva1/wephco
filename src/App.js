@@ -13,18 +13,18 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // CSS imports
-import './components/assets/css/bootstrap.min.css';
-import "./components/assets/css/owl.carousel.min.css"
-import "./components/assets/css/slicknav.css"
-import "./components/assets/css/flaticon.css"
-import "./components/assets/css/animate.min.css"
-import "./components/assets/css/magnific-popup.css"
-import "./components/assets/css/fontawesome-all.min.css"
-import "./components/assets/css/themify-icons.css"
-import "./components/assets/css/slick.css"
-import "./components/assets/css/nice-select.css"
-import "./components/assets/css/style.css"
-import './App.css';
+// import './components/assets/css/bootstrap.min.css';
+// import "./components/assets/css/owl.carousel.min.css"
+// import "./components/assets/css/slicknav.css"
+// import "./components/assets/css/flaticon.css"
+// import "./components/assets/css/animate.min.css"
+// import "./components/assets/css/magnific-popup.css"
+// import "./components/assets/css/fontawesome-all.min.css"
+// import "./components/assets/css/themify-icons.css"
+// import "./components/assets/css/slick.css"
+// import "./components/assets/css/nice-select.css"
+// import "./components/assets/css/style.css"
+import './style.css';
 import Hotel from './pages/Hotel/Hotel';
 
 function App() {

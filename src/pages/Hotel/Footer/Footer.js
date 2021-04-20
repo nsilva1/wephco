@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-content-brand">
-            <a href="/" className="logo">
+            {/* <a href="/" className="logo">
               <img className="logo-image" src={require('../../../assets/images/logo.png').default} alt="" />
-            </a>
-            <div className="paragraph">
+            </a> */}
+            {/* <div className="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.
-            </div>
+            </div> */}
           </div>
           <div className="social-media-wrap">
             <h4 className="footer-heading">Follow us</h4>
