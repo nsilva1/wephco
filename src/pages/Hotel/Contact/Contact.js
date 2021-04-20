@@ -15,25 +15,29 @@ const Contact = () => {
           <div className="traveler-wrap">
             <img alt="traveler" src={require('../../../assets/images/traveler.png').default} />
           </div>
-          {/* Contact Form */}
-
-          <div class="container">
-  <form>
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name.."/>
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
-
-    <button type='button' className='btn btn-white' >SEND MESSAGE</button>
-
-  </form>
-</div>
-
+          <form action="" className="form contact-form">
+            <div className="input-group-wrap">
+              <div className="input-group">
+                <input type="text" className="input" placeholder="Name" required/>
+                <span className="bar"></span>
+              </div>
+              <div className="input-group">
+                <input type="email" className="input" placeholder="E-mail" required/>
+                <span className="bar"></span>
+              </div>
+            </div>
+            {/* <div className="input-group">
+              <input type="text" className="input" placeholder="Subject" required/>
+              <span className="bar"></span>
+            </div> */}
+            <div className="input-group">
+              <textarea className="input" cols="30" rows="8" placeholder="Subject" required></textarea>
+              <span className="bar"></span> 
+            </div>
+            <button type="submit" className="btn form-btn btn-purple">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section> 
