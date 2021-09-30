@@ -12,11 +12,11 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <Navigation />
+      {/* <Navigation /> */}
       <Switch>
         <Route exact path='/' component={Home} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
