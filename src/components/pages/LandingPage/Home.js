@@ -1,5 +1,5 @@
-import SlideShow from './Carousel';
-import About from './About';
+// import SlideShow from './Carousel';
+// import About from './About';
 
 const Home = () => {
   return (
