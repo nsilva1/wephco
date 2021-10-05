@@ -62,7 +62,7 @@ const ContactUsModal = ({open, close}) => {
           </Col>
           <Col md={6} className=''>
             <form name='contact' method='POST' netlify>
-
+              <fieldset>
               <Row>
                 <Form.Group as={Col}>
                   <Form.Label className='text-white'>Name</Form.Label>
@@ -95,7 +95,7 @@ const ContactUsModal = ({open, close}) => {
               <Button variant='light' className='mt-3'>
                 Send Message
               </Button>
-
+              </fieldset>
             </form>
           </Col>
         </Row>
