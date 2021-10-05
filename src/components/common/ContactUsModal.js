@@ -61,7 +61,7 @@ const ContactUsModal = ({open, close}) => {
             </Row>
           </Col>
           <Col md={6} className=''>
-            <form name='contact' netlify>
+            <form name='contact' method='POST' data-netlify='true'>
 
               <Row>
                 <Form.Group as={Col}>
