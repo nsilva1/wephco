@@ -61,7 +61,7 @@ const ContactUsModal = ({open, close}) => {
             </Row>
           </Col>
           <Col md={6} className=''>
-            <form target="_blank" action="https://formsubmit.co/wephco.procurement@gmail.com" method="POST">
+            <form name='contact' netlify>
 
               <Row>
                 <Form.Group as={Col}>

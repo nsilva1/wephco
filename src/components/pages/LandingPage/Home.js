@@ -1,18 +1,17 @@
-// import SlideShow from './Carousel';
-// import About from './About';
+import SlideShow from './Carousel';
+import About from './About';
+import Services from './Services';
+import Works from './Works';
 
 const Home = () => {
   return (
     <>
-      {/* <SlideShow />
+      <SlideShow />
       <div className="mt-5">
         <About />
-      </div> */}
-      <div>
-        <h1 className=" text-center display-4">
-          Under Construction.
-        </h1>
       </div>
+      <Services />
+      <Works />
     </>
   )
 }

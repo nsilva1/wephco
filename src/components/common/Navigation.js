@@ -36,33 +36,33 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
           <Nav className='me-auto'>
-            <Nav.Link>
+            <Nav.Link className='p-4'>
               <NavLink to='/'>
                 <p>Home</p>
               </NavLink>
             </Nav.Link>
-            <Nav.Link>
-            <NavLink to='/real-estate'>
+            <Nav.Link className='p-4'>
+            <NavLink to='/'>
               <p>Real Estate</p>
             </NavLink>
             </Nav.Link>
-            <Nav.Link>
-            <NavLink to='/logistics'>
+            <Nav.Link className='p-4'>
+            <NavLink to='/'>
               <p>Logistics</p>
             </NavLink>
             </Nav.Link>
-            <Nav.Link>
-            <NavLink to='/foundation'>
+            <Nav.Link className='p-4'>
+            <NavLink to='/'>
               <p>Our Foundation</p>
             </NavLink>
             </Nav.Link>
-            <Nav.Link>
-            <NavLink to='/wephcofx'>
+            <p className='p-4'>
+            <a target="_blank" rel='noreferrer' href="https://fx.wephco.com">
               <p>Wephco Fx</p>
-            </NavLink>
-            </Nav.Link>
+            </a>
+            </p>
           </Nav>
-          <Button onClick={openContactModal} variant='outline-danger'>Contact Us</Button>
+          <Button onClick={openContactModal} className='bg-wephco-blue'>Contact Us</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
