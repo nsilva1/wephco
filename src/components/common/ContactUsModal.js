@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { db } from '../../utils/firebaseConfig';
+import { collection, addDoc } from 'firebase/firestore'
 
 const ContactUsModal = ({open, close}) => {
 
@@ -20,6 +22,36 @@ const ContactUsModal = ({open, close}) => {
       ...localState,
       [input]: event.target.value
     })
+  }
+
+  const clearForm = () => {
+    setLocalState({
+    ...localState,
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+    });
+  }
+
+  const submitContactForm = async (event) => {
+    event.preventDefault();
+
+    try {
+      await addDoc(collection(db, 'websiteContact'), {
+        name: localState.name,
+        email: localState.email,
+        phone: localState.phone,
+        subject: localState.subject,
+        message: localState.message
+      });
+      alert('Message sent successfully');
+      clearForm()
+      close()
+    } catch (error) {
+      alert('Error sending message')
+    }
   }
 
   return (
@@ -92,7 +124,7 @@ const ContactUsModal = ({open, close}) => {
                   <Form.Control name='Message' required as='textarea' type='text' value={localState.message} onChange={handleChange('message')} />
                 </Form.Group>
 
-              <Button variant='light' className='mt-3'>
+              <Button variant='light' className='mt-3' onClick={submitContactForm}>
                 Send Message
               </Button>
               </fieldset>
