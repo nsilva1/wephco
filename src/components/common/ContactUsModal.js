@@ -46,11 +46,11 @@ const ContactUsModal = ({open, close}) => {
         subject: localState.subject,
         message: localState.message
       });
-      alert('Message sent successfully');
+      alert('Message sent successfully. We will contact you shortly.');
       clearForm()
       close()
     } catch (error) {
-      alert('Error sending message')
+      alert('Error sending message. Try again.')
     }
   }
 
@@ -114,8 +114,13 @@ const ContactUsModal = ({open, close}) => {
                 </Form.Group>
 
                 <Form.Group as={Col}>
-                <Form.Label className='text-white'>Subject</Form.Label>
-                  <Form.Control name='Subject' required type='text' value={localState.subject} onChange={handleChange('subject')} />
+                <Form.Label className='text-white'>Pick a Service</Form.Label>
+                  <select className='form-control' name='services' required value={localState.subject} onChange={handleChange('subject')}>
+                    <option value="Interior & Exterior">Interior & Exterior Design</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Logistics">Logistics</option>
+                    <option value="FX">WephCoFx</option>
+                  </select>
                 </Form.Group>
               </Row>
 
