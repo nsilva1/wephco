@@ -57,7 +57,7 @@ const ContactUsModal = ({open, close}) => {
   return (
     <Modal size='lg' show={open} onHide={close}>
       <Modal.Header>
-        <Modal.Title>Contact Us</Modal.Title>
+        <Modal.Title>Consult Us</Modal.Title>
       </Modal.Header>
       <Modal.Body className='bg-wephco-blue'>
         <Row >
@@ -116,6 +116,7 @@ const ContactUsModal = ({open, close}) => {
                 <Form.Group as={Col}>
                 <Form.Label className='text-white'>Pick a Service</Form.Label>
                   <select className='form-control' name='services' required value={localState.subject} onChange={handleChange('subject')}>
+                    <option value=""></option>
                     <option value="Interior & Exterior">Interior & Exterior Design</option>
                     <option value="Real Estate">Real Estate</option>
                     <option value="Logistics">Logistics</option>
