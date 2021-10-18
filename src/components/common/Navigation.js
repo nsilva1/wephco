@@ -42,7 +42,7 @@ const Navigation = () => {
               </NavLink>
             </Nav.Link>
             <Nav.Link className='p-4'>
-            <NavLink to='/'>
+            <NavLink to='/real-estate'>
               <p>Real Estate</p>
             </NavLink>
             </Nav.Link>

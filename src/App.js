@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 // component imports
 import Navigation from './components/common/Navigation';
 import Home from './components/pages/LandingPage/Home';
+import RealEstate from './components/pages/RealEstate/RealEstate';
 import Footer from './components/common/Footer';
 
 // stylesheet imports
@@ -15,6 +16,7 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/real-estate' component={RealEstate} />
       </Switch>
       <Footer />
     </BrowserRouter>
