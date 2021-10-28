@@ -1,5 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+import { AppProvider } from './context/AppState'
+
 // component imports
 import Navigation from './components/common/Navigation';
 import Home from './components/pages/LandingPage/Home';
@@ -12,14 +14,16 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/real-estate' component={RealEstate} />
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+    <AppProvider>
+      <BrowserRouter>
+        <Navigation />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/real-estate' component={RealEstate} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </AppProvider>
   );
 }
 
