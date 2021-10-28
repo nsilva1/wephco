@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Navb from '../../common/Navigation'
 import How from './HowItWorks'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 const Home = () => {
 
-  var history = useHistory();
+  // var history = useHistory();
 
   const [currency, setCurrency] = useState('dollar');
   const [amount, setAmount] = useState(0);
@@ -26,7 +26,7 @@ const Home = () => {
       return;
     }
     // save amount to context
-    history.push('/transaction-details');
+    // history.push('/transaction-details');
   }
 
   return (
