@@ -6,7 +6,6 @@ import house from '../../../assets/images/house.jpeg';
 const RealEstate = () => {
   return (
     <>
-
       <div className="bg-wephco-blue header">
         <Container>
         <div className="p-5">
