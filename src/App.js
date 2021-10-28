@@ -2,7 +2,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 // component imports
 // import Navigation from './components/common/Navigation';
-import Home from './components/pages/LandingPage/Home';
+import Home from './components/pages/FX/Home';
+import Login from './components/pages/Auth/Login';
+import Register from './components/pages/Auth/Register';
 // import Footer from './components/common/Footer';
 
 // stylesheet imports
@@ -11,13 +13,13 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* <Navigation /> */}
-      <Switch>
-        <Route exact path='/' component={Home} />
-      </Switch>
-      {/* <Footer /> */}
-    </BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Register} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 
