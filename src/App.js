@@ -7,6 +7,7 @@ import Navigation from './components/common/Navigation';
 import Home from './components/pages/LandingPage/Home';
 import RealEstate from './components/pages/RealEstate/RealEstate';
 import Footer from './components/common/Footer';
+import PricingPlan from './components/pages/PricingPlan/PricingPlan'
 
 // stylesheet imports
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/real-estate' component={RealEstate} />
+          <Route exact path='/pricing' component={PricingPlan} />
         </Switch>
         <Footer />
       </BrowserRouter>

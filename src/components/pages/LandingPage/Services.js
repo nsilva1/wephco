@@ -3,7 +3,7 @@ import { Row, Col, Container, Card} from 'react-bootstrap'
 import interior3 from '../../../assets/images/interior3.jpeg'
 import realestate from '../../../assets/images/realestate.jpeg'
 import logistics from '../../../assets/images/logistics-3125131_1920.jpg'
-// import wephfx from '../../images/wephcofx-big.jpg'
+import wephfx from '../../../assets/images/exchange.jpeg'
 
 const Services = () => {
   return (
@@ -38,7 +38,7 @@ const Services = () => {
               </Col>
               <Col>
               <Card className='h-100'>
-                  <Card.Img variant='top' className='d-block w-100' src={logistics} alt='' />
+                  <Card.Img variant='top' className='d-block h-100 w-100' src={logistics} alt='' />
                   <Card.Footer>
                     <h6 className='wephco-blue'>Logistics</h6>
                   </Card.Footer>
@@ -46,7 +46,7 @@ const Services = () => {
               </Col>
               <Col>
               <Card className='h-100'>
-                  {/* <Card.Img variant='top' className='d-block w-100' src={wephfx} alt='' /> */}
+                  <Card.Img variant='top' className='d-block h-100 w-100' src={wephfx} alt='' />
                   <Card.Footer>
                     <h6 className='wephco-blue'>WephcoFx</h6>
                   </Card.Footer>

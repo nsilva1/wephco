@@ -23,3 +23,18 @@ nav a:active {
 	background-color: #002147;
 	color: white;
 }
+
+.btn-bronze {
+	background-color: #cd7f32;
+	color: #fff;
+}
+
+.btn-silver {
+	background-color: #c0c0c0;
+	color: #fff;
+}
+
+.btn-gold {
+	background-color: #ffd700;
+	color: #fff;
+}

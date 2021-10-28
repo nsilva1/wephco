@@ -1,9 +1,10 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
-// import realestate from '../../../assets/images/realestate.jpeg';
+import { Link } from 'react-router-dom';
 import house from '../../../assets/images/house.jpeg';
 
 const RealEstate = () => {
+
   return (
     <>
       <div className="bg-wephco-blue header">
@@ -46,12 +47,15 @@ const RealEstate = () => {
 
       <div className="pictures">
         <Container>
-          <h6 className="mt-5 text-danger fw-bold">BECOME A MEMBER</h6>
-          <h5 className='fw-bold'>GET UP TO 20% DISCOUNT ON PROPERTIES IN NIGERIA</h5>
-          <div className="picture-slide"></div>
+          <h6 className="mt-5 text-danger fw-bold text-center">BECOME A MEMBER</h6>
+          <h5 className='fw-bold text-center'>GET UP TO 20% DISCOUNT ON PROPERTIES IN NIGERIA</h5>
+          <div className="text-center p-5">
+              <Link to='/pricing' className='btn btn-block bg-wephco-blue'>
+                REGISTER
+              </Link>
+            </div>
         </Container>
       </div>
-      
     </>
   )
 }
