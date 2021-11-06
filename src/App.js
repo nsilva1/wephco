@@ -1,11 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { ToastProvider } from 'react-toast-notifications'
+import { AppProvider } from './context/AppState'
 
 // component imports
-// import Navigation from './components/common/Navigation';
 import Home from './components/pages/FX/Home';
 import Login from './components/pages/Auth/Login';
 import Register from './components/pages/Auth/Register';
-// import Footer from './components/common/Footer';
 
 // stylesheet imports
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -13,6 +13,8 @@ import './App.css';
 
 function App() {
   return (
+    <AppProvider>
+      <ToastProvider>
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
@@ -20,6 +22,8 @@ function App() {
           <Route exact path='/register' component={Register} />
         </Switch>
       </BrowserRouter>
+      </ToastProvider>
+    </AppProvider>
   );
 }
 

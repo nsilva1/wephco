@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Navb from '../../common/Navigation'
 import How from './HowItWorks'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import { AppContext } from '../../../context/AppState'
+import { useToasts } from 'react-toast-notifications'
 
 const Home = () => {
+  const { appState, changeState } = useContext(AppContext)
+  const { addToast } = useToasts()
 
-  // var history = useHistory();
+  let history = useHistory();
+  let authenticated = appState.isAuthenticated;
 
   const [currency, setCurrency] = useState('dollar');
   const [amount, setAmount] = useState(0);
@@ -21,12 +26,19 @@ const Home = () => {
   const submit = (event) => {
     event.preventDefault();
     const amountToChange = amount;
+
     if(amountToChange < 10){
-      alert('Amount is too low');
+      addToast('Amount is too low',{appearance:'warning'})
       return;
     }
-    // save amount to context
-    // history.push('/transaction-details');
+
+    // check if authenticated then redirect 
+    if(authenticated){
+      changeState('amount',amountToChange)
+      history.push('/transaction-details')
+    } else {
+      history.push('/login')
+    }
   }
 
   return (
