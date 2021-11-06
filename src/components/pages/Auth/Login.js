@@ -8,7 +8,7 @@ import { useToasts } from 'react-toast-notifications'
 import { AppContext } from '../../../context/AppState'
 
 const Login = () => {
-  const { appState, changeState } = useContext(AppContext)
+  const { changeState } = useContext(AppContext)
 
   const { addToast } = useToasts()
   let history = useHistory()

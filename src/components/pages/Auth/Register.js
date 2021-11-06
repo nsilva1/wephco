@@ -38,12 +38,13 @@ const Register = () => {
       })
       addToast('Registration Complete. Please Log in',{appearance:'success'})
       history.push('/login')
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message
+    }).catch((_error) => {
+      // const errorCode = error.code;
+      // const errorMessage = error.message
       addToast('Bad Network Connection. Please Try Again',{appearance:'error'})
     }).finally(() => {
       setLoading(false);
+      clearForm();
     })
 
   }
