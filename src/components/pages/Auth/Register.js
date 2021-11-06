@@ -30,7 +30,7 @@ const Register = () => {
 
     createUserWithEmailAndPassword(auth, localState.email, localState.password).then((UserCredential) => {
       // const user = UserCredential.user;
-      await addDoc(collection(db, 'members'), {
+      addDoc(collection(db, 'members'), {
         email: localState.email,
         name: localState.name,
         phone: localState.phone,
