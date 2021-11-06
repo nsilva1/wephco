@@ -34,7 +34,7 @@ const Login = () => {
       // get user data and save to context.
       const user = UserCredential.user
       const docRef = doc(db, 'members', user.uid)
-      const docSnap = await getDoc(docRef)
+      const docSnap = getDoc(docRef)
 
       if(docSnap.exists()){
         const userData = docSnap.data();
